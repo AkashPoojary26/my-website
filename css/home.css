@@ -1,0 +1,63 @@
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../images/upscaled_tulunad_beach.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Dark overlay for readability */
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+    );
+    pointer-events: none;
+}
+
+
+.hero-text {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    z-index: 10;
+    max-width: 700px;
+    padding: 20px;
+    margin-top: 120px;
+}
+
+.hero-text h1 {
+    font-size: 64px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    margin-top: 10px;
+    font-size: 20px;
+    opacity: 0.95;
+}
+
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background: #c58f0f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #a3740c;
+}

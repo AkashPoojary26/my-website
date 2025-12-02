@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tulunadu Food</title>
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/food.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="logo">TULUNAD</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="culture.html">Culture</a>
+        <a href="food.html" class="active">Food</a>
+        <a href="festivals.html">Festivals</a>
+      </nav>
+    </header>
+
+    <!-- FEATURED SECTION -->
+    <section class="featured-section" id="featuredSection">
+      <div class="featured-container">
+        <h1>Traditional Foods of Tulunadu</h1>
+        <p class="subtitle">
+          A delicious blend of coastal flavours, spices and heritage.
+        </p>
+
+        <div class="featured-card" id="featuredCard">
+          <img id="featuredImage" src="images/neerdosa.webp" alt="Neer Dosa" />
+          <div class="featured-text">
+            <h2 id="featuredTitle">Neer Dosa</h2>
+            <p id="featuredDesc">
+              A soft, delicate rice dosa unique to Tulunadu. Served best with
+              chutney, fish curry or chicken sukka.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOD GRID -->
+    <section class="food-grid-section">
+      <h2>Popular Tulunadu Dishes</h2>
+
+      <div class="food-grid">
+        <div
+          class="food-card"
+          data-name="Neer Dosa"
+          data-image="images/neerdosa.webp"
+          data-desc="A soft, delicate rice dosa unique to Tulunadu. Served best with chutney, fish curry or chicken sukka."
+        >
+          <img src="images/neerdosa.webp" />
+          <h3>Neer Dosa</h3>
+          <p>A soft, delicate rice dosa unique to Tulunadu.</p>
+        </div>
+
+        <div
+          class="food-card"
+          data-name="Kori Rotti"
+          data-image="images/korirotti.jpg"
+          data-desc="Crispy dry rotti with spicy coconut chicken gravy."
+        >
+          <img src="images/korirotti.jpg" />
+          <h3>Kori Rotti</h3>
+          <p>Crispy dry rotti with spicy coconut chicken gravy.</p>
+        </div>
+
+        <div
+          class="food-card"
+          data-name="Chicken Sukka"
+          data-image="images/chickensukka.webp"
+          data-desc="Chicken cooked with grated coconut & roasted spices."
+        >
+          <img src="images/chickensukka.webp" />
+          <h3>Chicken Sukka</h3>
+          <p>Chicken cooked with grated coconut & roasted spices.</p>
+        </div>
+
+        <div
+          class="food-card"
+          data-name="Pundi (Rice Dumplings)"
+          data-image="images/pundi.webp"
+          data-desc="Soft steamed rice balls, served with coconut chutney."
+        >
+          <img src="images/pundi.webp" />
+          <h3>Pundi (Rice Dumplings)</h3>
+          <p>Soft steamed rice balls, served with coconut chutney.</p>
+        </div>
+
+        <div
+          class="food-card"
+          data-name="Goli Baje"
+          data-image="images/golibaje.jpg"
+          data-desc="Crispy outside, soft inside—famous Tulunadu snack."
+        >
+          <img src="images/golibaje.jpg" />
+          <h3>Goli Baje</h3>
+          <p>Crispy outside, soft inside—famous Tulunadu snack.</p>
+        </div>
+
+        <div
+          class="food-card"
+          data-name="Seer Fish Fry"
+          data-image="images/fishfry.jpg"
+          data-desc="Fresh coastal fish marinated with Tulunadu masala."
+        >
+          <img src="images/fishfry.jpg" />
+          <h3>Seer Fish Fry</h3>
+          <p>Fresh coastal fish marinated with Tulunadu masala.</p>
+        </div>
+
+        <div
+          class="food-card"
+          data-name="Tulu Style Meal"
+          data-image="images/meal.jpg"
+          data-desc="Rice, sambar, curries, pickles and coastal flavours."
+        >
+          <img src="images/meal.jpg" />
+          <h3>Tulu Style Meal</h3>
+          <p>Rice, sambar, curries, pickles and coastal flavours.</p>
+        </div>
+
+        <div
+          class="food-card"
+          data-name="Pathrode"
+          data-image="images/pathrode.webp"
+          data-desc="Colocasia leaves rolled with spiced rice batter, steamed, sliced and shallow fried. A signature vegetarian dish of Tulunadu."
+        >
+          <img src="images/pathrode.webp" />
+          <h3>Pathrode</h3>
+          <p>Steamed colocasia leaf rolls cooked with coconut spices.</p>
+        </div>
+
+        <div
+          class="food-card"
+          data-name="Bangude Pulimunchi"
+          data-image="images/bangude.jpg"
+          data-desc="A spicy, tangy Mackerel curry made with tamarind, chilli and roasted coastal spices."
+        >
+          <img src="images/bangude.jpg" />
+          <h3>Bangude Pulimunchi</h3>
+          <p>Spicy & tangy Tulunadu-style mackerel curry.</p>
+        </div>
+
+        <div
+          class="food-card"
+          data-name="Mangalore Buns"
+          data-image="images/mangalore-buns.jpg"
+          data-desc="Sweet banana puris that are soft, fluffy and deeply fried. A popular Tulunadu snack."
+        >
+          <img src="images/mangalore-buns.jpg" />
+          <h3>Mangalore Buns</h3>
+          <p>Sweet, soft banana puris — a famous Tulu snack.</p>
+        </div>
+
+        <div
+          class="food-card"
+          data-name="Kotte Kadubu"
+          data-image="images/kottekadubu.webp"
+          data-desc="Steamed rice idlis prepared in jackfruit leaf cups, a traditional Tulunadu breakfast."
+        >
+          <img src="images/kottekadubu.webp" />
+          <h3>Kotte Kadubu</h3>
+          <p>Steamed idlis made in jackfruit leaf cups.</p>
+        </div>
+
+        <div
+          class="food-card"
+          data-name="Prawn Ghee Roast"
+          data-image="images/prawnsgheeroast.webp"
+          data-desc="Tiger prawns cooked with ghee, chilli paste and spices—an iconic coastal dish."
+        >
+          <img src="images/prawnsgheeroast.webp" />
+          <h3>Prawn Ghee Roast</h3>
+          <p>Prawns roasted in ghee, chilli & spices.</p>
+        </div>
+      </div>
+    </section>
+    <script src="js/food.js"></script>
+  </body>
+</html>

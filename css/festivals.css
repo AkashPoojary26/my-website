@@ -1,0 +1,54 @@
+/* FULL PAGE PARALLAX SECTIONS */
+
+.parallax {
+    position: relative;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* DARK OVERLAY */
+.parallax::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+/* TEXT CONTENT */
+.content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.content p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* FESTIVAL IMAGES */
+.f1 { background-image: url('../images/festivals/kambula.jpg'); }
+.f2 { background-image: url('../images/festivals/kola.jpg'); }
+.f4 { background-image: url('../images/festivals/kedASA.jpg'); }
+.f5 { background-image: url('../images/festivals/naga.jpg'); }
+.f6 { background-image: url('../images/festivals/rathosava.jpg'); }
+
+/* MOBILE FIX */
+@media (max-width: 600px) {
+    .content h1 { font-size: 36px; }
+    .content p { font-size: 16px; }
+}

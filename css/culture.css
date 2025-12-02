@@ -1,0 +1,48 @@
+/* Culture Section */
+.culture-section {
+    padding: 120px 60px;
+    text-align: center;
+}
+
+.culture-section h1 {
+    font-size: 42px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.culture-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.culture-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.culture-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+}
+
+.culture-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.culture-card h3 {
+    margin: 15px;
+    font-size: 22px;
+    color: #222;
+}
+
+.culture-card p {
+    margin: 0 15px 20px;
+    color: #666;
+    font-size: 14px;
+}
