@@ -26,11 +26,18 @@ body {
 }
 
 
-.navbar .logo {
+.logo {
+    font-family: 'Cinzel', serif;
     font-size: 28px;
     font-weight: 700;
-    color: #c58f0f; /* Gold */
+    letter-spacing: 2px;
+
+    background: linear-gradient(45deg, #c2902f, #e6c36a, #c2902f);
+    -webkit-background-clip: text;
+    color: transparent;
 }
+
+
 
 .navbar nav a {
     margin-left: 30px;
