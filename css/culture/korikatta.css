@@ -1,0 +1,177 @@
+/* --------------------------------------------
+   GLOBAL PAGE BACKGROUND
+--------------------------------------------- */
+body {
+    background: #1a0f0b;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+/* --------------------------------------------
+   HERO SECTION
+--------------------------------------------- */
+.kori-hero {
+    height: 80vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('../../images/korikatta/hero.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kori-hero-content h1 {
+    font-size: 70px;
+    letter-spacing: 4px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-shadow: 0 8px 25px rgba(0,0,0,0.8);
+}
+
+.kori-hero-content p {
+    font-size: 22px;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* --------------------------------------------
+   ABOUT SECTION
+--------------------------------------------- */
+.kori-about {
+    display: flex;
+    gap: 40px;
+    padding: 70px;
+    align-items: center;
+}
+
+.kori-about img {
+    width: 420px;
+    border-radius: 14px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.6);
+}
+
+.kori-about-text h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+    color: #ffce74;
+}
+
+.kori-about-text p {
+    color: #e8e8e8;
+    line-height: 1.7;
+}
+
+/* --------------------------------------------
+   CULTURAL SIGNIFICANCE
+--------------------------------------------- */
+.kori-significance {
+    background: #3a2418;
+    padding: 60px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.kori-significance h2 {
+    text-align: center;
+    color: #ffce74;
+    margin-bottom: 20px;
+}
+
+.kori-significance ul {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+    padding-left: 20px;
+}
+
+/* --------------------------------------------
+   STEPS SECTION
+--------------------------------------------- */
+.kori-steps {
+    padding: 70px;
+    text-align: center;
+}
+
+.kori-steps h2 {
+    color: #ffce74;
+}
+
+.kori-step-grid {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.kori-step-card {
+    width: 33%;
+    background: #2a1a13;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+.kori-step-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.kori-step-card h3 {
+    margin-top: 12px;
+    color: #ffce74;
+}
+
+.kori-step-card p {
+    color: #e0e0e0;
+}
+
+/* --------------------------------------------
+   MODERN STATUS
+--------------------------------------------- */
+.kori-modern {
+    padding: 70px 60px;
+    background: rgba(255,255,255,0.06);
+    margin: 50px;
+    border-radius: 14px;
+    text-align: center;
+    backdrop-filter: blur(4px);
+}
+
+/* --------------------------------------------
+   GALLERY SECTION
+--------------------------------------------- */
+.kori-gallery {
+    padding: 60px;
+    text-align: center;
+}
+
+.kori-gallery-strip {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.kori-gallery-strip img {
+    height: 180px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+
+/* --------------------------------------------
+   BACK BUTTON
+--------------------------------------------- */
+.kori-back {
+    text-align: center;
+    padding: 50px;
+}
+
+.kori-back a {
+    background: #c58f0f;
+    padding: 14px 28px;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
