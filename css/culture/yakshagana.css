@@ -1,9 +1,33 @@
-/* HERO SECTION */
+/* -----------------------------------------
+   GLOBAL PAGE BACKGROUND
+----------------------------------------- */
+body {
+    background: 
+        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+        url('../../images/Yakshagana.jpg') center/cover fixed;
+    background-attachment: fixed;
+    backdrop-filter: blur(4px);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Smooth fade animation */
+section {
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* -----------------------------------------
+   HERO SECTION
+----------------------------------------- */
 .yak-hero {
     height: 75vh;
-    background: 
+    background:
         linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-        url('../images/yakshagana/y-hero.jpg') center/cover no-repeat;
+        url('../../images/yakshagana/herooimg.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,18 +35,22 @@
 }
 
 .yak-hero-text h1 {
-    font-size: 60px;
+    font-size: 64px;
     color: #fff;
-    text-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    letter-spacing: 2px;
+    text-shadow: 0 6px 18px rgba(0,0,0,0.7);
 }
 
 .yak-hero-text p {
-    color: #eee;
-    font-size: 20px;
-    margin-top: 10px;
+    color: #f4f4f4;
+    font-size: 22px;
+    margin-top: 12px;
+    opacity: 0.9;
 }
 
-/* ABOUT SECTION */
+/* -----------------------------------------
+   ABOUT SECTION
+----------------------------------------- */
 .yak-about {
     display: flex;
     gap: 40px;
@@ -30,58 +58,82 @@
     align-items: center;
 }
 
-.yak-about img {
-    width: 420px;
-    border-radius: 12px;
+.yak-about-img img {
+    width: 440px;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
 }
 
 .yak-about-text h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
+    font-size: 34px;
+    margin-bottom: 12px;
+    color: #fff;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.4);
 }
 
 .yak-about-text p {
+    font-size: 17px;
     margin-bottom: 10px;
-    color: #444;
+    color: #e8e8e8;
+    line-height: 1.7;
 }
 
-/* STYLE CARDS */
+/* -----------------------------------------
+   YAKSHAGANA STYLES SECTION
+----------------------------------------- */
 .yak-styles {
     text-align: center;
     padding: 60px;
 }
 
+.yak-styles h2 {
+    color: #fff;
+    font-size: 32px;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.4);
+}
+
 .yak-style-grid {
     display: flex;
     gap: 30px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .yak-style-card {
     width: 50%;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    padding-bottom: 20px;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(4px);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.18);
+    transition: 0.3s ease;
+}
+
+.yak-style-card:hover {
+    transform: translateY(-10px);
 }
 
 .yak-style-card img {
     width: 100%;
-    height: 250px;
+    height: 260px;
     object-fit: cover;
 }
 
 .yak-style-card h3 {
     margin-top: 15px;
+    color: #111;
+    font-size: 22px;
 }
 
 .yak-style-card ul {
     text-align: left;
-    margin: 15px 40px;
-    color: #555;
+    margin: 15px 30px 25px;
+    line-height: 1.6;
+    color: #444;
 }
 
-/* COSTUME + MUSIC */
+/* -----------------------------------------
+   COSTUME + MUSIC SECTION
+----------------------------------------- */
 .yak-cm {
     display: flex;
     padding: 60px;
@@ -90,39 +142,67 @@
 
 .yak-cm-box {
     flex: 1;
-    background: #fafafa;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(5px);
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    box-shadow: 0 3px 16px rgba(0,0,0,0.15);
 }
 
-/* VIDEO */
+.yak-cm-box h2 {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.yak-cm-box p {
+    color: #444;
+    line-height: 1.7;
+}
+
+/* -----------------------------------------
+   VIDEO SECTION
+----------------------------------------- */
 .yak-video {
     text-align: center;
     padding: 60px;
 }
 
+.yak-video h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.4);
+}
+
 .video-wrapper {
-    max-width: 800px;
+    max-width: 850px;
     margin: auto;
 }
 
 .video-wrapper iframe {
     width: 100%;
-    height: 430px;
+    height: 450px;
     border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
 }
 
-/* BACK BUTTON */
+/* -----------------------------------------
+   BACK BUTTON
+----------------------------------------- */
 .yak-back {
     text-align: center;
-    padding: 40px;
+    padding: 50px;
 }
 
 .yak-back a {
     background: #c58f0f;
-    padding: 12px 25px;
+    padding: 14px 28px;
     color: #fff;
-    border-radius: 8px;
+    border-radius: 10px;
     text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.yak-back a:hover {
+    background: #a3740c;
 }
