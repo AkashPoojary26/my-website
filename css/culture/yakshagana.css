@@ -1,0 +1,128 @@
+/* HERO SECTION */
+.yak-hero {
+    height: 75vh;
+    background: 
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url('../images/yakshagana/y-hero.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.yak-hero-text h1 {
+    font-size: 60px;
+    color: #fff;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+.yak-hero-text p {
+    color: #eee;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* ABOUT SECTION */
+.yak-about {
+    display: flex;
+    gap: 40px;
+    padding: 60px;
+    align-items: center;
+}
+
+.yak-about img {
+    width: 420px;
+    border-radius: 12px;
+}
+
+.yak-about-text h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.yak-about-text p {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* STYLE CARDS */
+.yak-styles {
+    text-align: center;
+    padding: 60px;
+}
+
+.yak-style-grid {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.yak-style-card {
+    width: 50%;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding-bottom: 20px;
+}
+
+.yak-style-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.yak-style-card h3 {
+    margin-top: 15px;
+}
+
+.yak-style-card ul {
+    text-align: left;
+    margin: 15px 40px;
+    color: #555;
+}
+
+/* COSTUME + MUSIC */
+.yak-cm {
+    display: flex;
+    padding: 60px;
+    gap: 40px;
+}
+
+.yak-cm-box {
+    flex: 1;
+    background: #fafafa;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+/* VIDEO */
+.yak-video {
+    text-align: center;
+    padding: 60px;
+}
+
+.video-wrapper {
+    max-width: 800px;
+    margin: auto;
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 430px;
+    border-radius: 12px;
+}
+
+/* BACK BUTTON */
+.yak-back {
+    text-align: center;
+    padding: 40px;
+}
+
+.yak-back a {
+    background: #c58f0f;
+    padding: 12px 25px;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+}
