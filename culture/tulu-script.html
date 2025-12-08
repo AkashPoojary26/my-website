@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulu Language & Script – Tulunadu</title>
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/culture/tuluscript.css" />
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">TULUNADU</div>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../history.html">History</a>
+        <a href="../culture.html" class="active">Culture</a>
+        <a href="../food.html">Food</a>
+        <a href="../festivals.html">Festivals</a>
+    </nav>
+</header>
+
+<!-- TITLE -->
+<section class="ts-header">
+    <h1>Tulu Language & Ancient Script</h1>
+    <p>One of the oldest Dravidian linguistic treasures of Tulunadu.</p>
+</section>
+
+<!-- INTRO PANEL -->
+<section class="ts-panel">
+    <h2>Introduction</h2>
+    <p>
+        Tulu is one of the oldest Dravidian languages, spoken primarily in the coastal districts 
+        of Dakshina Kannada, Udupi and parts of Kasaragod. With a history stretching over 
+        2,000 years, Tulu has a rich oral and literary heritage that has been preserved through 
+        folklore, songs, rituals and inscriptions.
+    </p>
+
+    <p>
+        While today Tulu is written in the Kannada script in everyday use, 
+        the language originally had its own <b>unique script</b> — an elegant writing system 
+        used in palm-leaf manuscripts, temple archives and religious texts of Tulunadu.  
+        Many of these manuscripts still survive, offering insights into ancient cultural life.
+    </p>
+
+    <p>
+        The language remains vibrant today through cinema, theatre, 
+        Paddanas (oral epics), Yakshagana performances and digital literature.
+    </p>
+</section>
+
+<!-- IMAGE SHOWCASE -->
+<section class="ts-gallery">
+    <div class="ts-card">
+        <img src="../images/tuluscript/stone.jpg">
+        <p>Ancient Stone Inscriptions</p>
+    </div>
+
+    <div class="ts-card">
+        <img src="../images/tuluscript/pamleaf.jpg">
+        <p>Palm Leaf Manuscripts</p>
+    </div>
+
+    <div class="ts-card">
+        <img src="../images/tuluscript/tradional.jpg">
+        <p>Traditional Script Style</p>
+    </div>
+</section>
+
+<!-- ACCORDION -->
+<section class="ts-accordion">
+    <h2>Learn More</h2>
+
+    <!-- ORIGIN -->
+    <div class="acc-item">
+        <button class="acc-btn">Origin of Tulu Script</button>
+        <div class="acc-content">
+            <p>
+                The Tulu script has its roots in the ancient <b>Brahmi</b> family of writing systems
+                and gradually evolved through the early <b>Grantha</b> script used in southern India.
+                Because Tulunadu had strong cultural and trade connections with Kerala and Tamil regions,
+                the script developed rounded shapes similar to Malayalam and Grantha characters.
+            </p>
+            <p>
+                The script was widely used between the 12th and 18th centuries in temple documents,
+                educational manuscripts, palm-leaf records and Daiva/ritual texts. Traders, priests,
+                astrologers and scholars of the region used the script extensively in their daily work.
+            </p>
+        </div>
+    </div>
+
+    <!-- EVOLUTION -->
+    <div class="acc-item">
+        <button class="acc-btn">Evolution Over Time</button>
+        <div class="acc-content">
+            <p>
+                Tulu script evolved primarily due to the medium on which it was written —
+                <b>palm leaves</b>. Straight lines could tear the leaf, so scribes naturally
+                developed smooth circular strokes, resulting in the script’s beautiful curves.
+            </p>
+            <p>
+                Over time, administrative systems shifted and Kannada became the mainstream writing
+                script in schools and government offices. As a result, the original Tulu script slowly
+                faded from everyday use but continued to survive in temples, families and oral traditions.
+            </p>
+        </div>
+    </div>
+
+    <!-- TEMPLE USAGE -->
+    <div class="acc-item">
+        <button class="acc-btn">Temple & Ritual Usage</button>
+        <div class="acc-content">
+            <p>
+                The strongest preservation of Tulu script is found in sacred spaces. Temple priests
+                used it for recording festivals, donations, ancestral lists, and rituals associated
+                with <b>Daiva Aradhane</b>. Many palm-leaf manuscripts describing the origins and
+                duties of local Daivas were written in pure Tulu script.
+            </p>
+            <p>
+                In particular, the Paddanas — long narrative songs of heroes, spirits and deities —
+                were sometimes documented in the script to preserve oral traditions. This made the
+                script not just a writing system, but a guardian of the region’s spiritual identity.
+            </p>
+        </div>
+    </div>
+
+    <!-- REVIVAL -->
+    <div class="acc-item">
+        <button class="acc-btn">Modern Revival</button>
+        <div class="acc-content">
+            <p>
+                In the last two decades, scholars, cultural organisations and Tulu enthusiasts have
+                taken major steps to revive the script. Workshops are being conducted in schools,
+                new digital fonts have been created, and historic manuscripts are being scanned
+                for preservation.
+            </p>
+            <p>
+                Social media, cinema and digital communities have brought new life to the language.
+                Many groups are campaigning for Tulu to be included in the <b>8th Schedule</b> of the
+                Indian Constitution, which would give the language national recognition and support.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- BACK BUTTON -->
+<div class="ts-back">
+    <a href="../culture.html">⬅ Back to Culture</a>
+</div>
+
+<script>
+const btns = document.querySelectorAll(".acc-btn");
+btns.forEach(b => {
+    b.addEventListener("click", () => {
+        b.classList.toggle("active");
+        const panel = b.nextElementSibling;
+        panel.style.maxHeight = panel.style.maxHeight ? null : panel.scrollHeight + "px";
+    });
+});
+</script>
+
+</body>
+</html>
