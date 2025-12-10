@@ -1,11 +1,14 @@
-/* FULL PAGE PARALLAX SECTIONS */
-
+/* ============================
+   PARALLAX SECTIONS (DESKTOP)
+============================ */
 .parallax {
     position: relative;
     height: 100vh;
     background-attachment: fixed;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,9 +20,10 @@
     position: absolute;
     inset: 0;
     background: rgba(0,0,0,0.45);
+    pointer-events: none;
 }
 
-/* TEXT CONTENT */
+/* TEXT INSIDE PARALLAX */
 .content {
     position: relative;
     z-index: 2;
@@ -31,24 +35,80 @@
 
 .content h1 {
     font-size: 60px;
-    margin-bottom: 15px;
+    font-weight: 800;
     letter-spacing: 2px;
+    margin-bottom: 15px;
 }
 
 .content p {
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1.6;
+    margin-top: 10px;
 }
 
-/* FESTIVAL IMAGES */
+/* ============================
+   FESTIVAL IMAGES
+============================ */
 .f1 { background-image: url('../images/festivals/kambula.jpg'); }
 .f2 { background-image: url('../images/festivals/kola.jpg'); }
 .f4 { background-image: url('../images/festivals/kedASA.jpg'); }
 .f5 { background-image: url('../images/festivals/naga.jpg'); }
 .f6 { background-image: url('../images/festivals/rathosava.jpg'); }
 
-/* MOBILE FIX */
+/* ============================
+   PARALLAX MOBILE FIX
+============================ */
+@media (max-width: 900px) {
+    .parallax {
+        background-attachment: scroll !important;
+        height: 85vh;                /* Increased height to avoid image cropping */
+        background-size: cover;
+        background-position: center top; 
+    }
+
+    .content h1 {
+        font-size: 42px;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+}
+
+/* ============================
+   SMALL MOBILE FIX (≤ 600px)
+============================ */
 @media (max-width: 600px) {
-    .content h1 { font-size: 36px; }
-    .content p { font-size: 16px; }
+    .parallax {
+        height: 90vh;                /* Makes full image visible on small screens */
+        background-position: center center;
+    }
+
+    .content h1 {
+        font-size: 32px;
+        letter-spacing: 1px;
+    }
+
+    .content p {
+        font-size: 15px;
+        padding: 0 14px;
+        line-height: 1.45;
+    }
+}
+
+/* ============================
+   ULTRA SMALL DEVICES (≤ 400px)
+============================ */
+@media (max-width: 400px) {
+    .parallax {
+        height: 100vh;                /* Prevents zooming & cropping */
+    }
+
+    .content h1 {
+        font-size: 26px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
 }

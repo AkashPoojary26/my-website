@@ -5,6 +5,7 @@ body {
     background: #1a0f0b;
     font-family: 'Poppins', sans-serif;
     color: #fff;
+    overflow-x: hidden;
 }
 
 /* --------------------------------------------
@@ -18,6 +19,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 20px;
 }
 
 .kori-hero-content h1 {
@@ -66,13 +69,13 @@ body {
 --------------------------------------------- */
 .kori-significance {
     background: #3a2418;
-    padding: 60px;
+    padding: 60px 30px;
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
+    text-align: center;
 }
 
 .kori-significance h2 {
-    text-align: center;
     color: #ffce74;
     margin-bottom: 20px;
 }
@@ -80,6 +83,7 @@ body {
 .kori-significance ul {
     max-width: 800px;
     margin: auto;
+    text-align: left;
     line-height: 1.8;
     padding-left: 20px;
 }
@@ -88,7 +92,7 @@ body {
    STEPS SECTION
 --------------------------------------------- */
 .kori-steps {
-    padding: 70px;
+    padding: 70px 60px;
     text-align: center;
 }
 
@@ -130,7 +134,7 @@ body {
    MODERN STATUS
 --------------------------------------------- */
 .kori-modern {
-    padding: 70px 60px;
+    padding: 60px;
     background: rgba(255,255,255,0.06);
     margin: 50px;
     border-radius: 14px;
@@ -174,4 +178,77 @@ body {
     border-radius: 10px;
     text-decoration: none;
     font-size: 16px;
+}
+
+
+/* ============================================================
+   📱 RESPONSIVE DESIGN (MOBILE + TABLETS)
+============================================================ */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .kori-about {
+        flex-direction: column;
+        padding: 50px 30px;
+        text-align: center;
+    }
+
+    .kori-about img {
+        width: 90%;
+        max-width: 420px;
+    }
+
+    .kori-step-grid {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .kori-step-card {
+        width: 100%;
+    }
+
+    .kori-modern {
+        margin: 40px 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .kori-hero-content h1 {
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+
+    .kori-hero-content p {
+        font-size: 16px;
+    }
+
+    .kori-about {
+        padding: 30px 20px;
+    }
+
+    .kori-about img {
+        width: 100%;
+    }
+
+    .kori-significance {
+        padding: 40px 20px;
+    }
+
+    .kori-steps {
+        padding: 40px 20px;
+    }
+
+    .kori-gallery {
+        padding: 40px 20px;
+    }
+
+    .kori-gallery-strip img {
+        height: 140px;
+    }
+
+    .kori-modern {
+        margin: 20px;
+        padding: 30px;
+    }
 }

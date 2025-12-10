@@ -6,15 +6,14 @@ body {
         linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
         url('../../images/culture-bg.jpg') center/cover fixed;
     background-attachment: fixed;
-    backdrop-filter: blur(4px);
     font-family: 'Poppins', sans-serif;
+    color: #fff;
 }
 
 /* Smooth fade animation */
 section {
     animation: fadeIn 0.8s ease-out;
 }
-
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to   { opacity: 1; transform: translateY(0); }
@@ -36,13 +35,11 @@ section {
 
 .yak-hero-text h1 {
     font-size: 64px;
-    color: #fff;
     letter-spacing: 2px;
     text-shadow: 0 6px 18px rgba(0,0,0,0.7);
 }
 
 .yak-hero-text p {
-    color: #f4f4f4;
     font-size: 22px;
     margin-top: 12px;
     opacity: 0.9;
@@ -67,15 +64,14 @@ section {
 .yak-about-text h2 {
     font-size: 34px;
     margin-bottom: 12px;
-    color: #fff;
     text-shadow: 0 3px 8px rgba(0,0,0,0.4);
 }
 
 .yak-about-text p {
     font-size: 17px;
     margin-bottom: 10px;
-    color: #e8e8e8;
     line-height: 1.7;
+    color: #eee;
 }
 
 /* -----------------------------------------
@@ -87,7 +83,6 @@ section {
 }
 
 .yak-styles h2 {
-    color: #fff;
     font-size: 32px;
     text-shadow: 0 3px 8px rgba(0,0,0,0.4);
 }
@@ -98,26 +93,24 @@ section {
     margin-top: 40px;
 }
 
-/* ⭐ PREMIUM STYLE CARD DESIGN */
+/* Premium glass card */
 .yak-style-card {
     width: 50%;
-    position: relative;
     background: rgba(255,255,255,0.12);
     backdrop-filter: blur(12px);
     border-radius: 16px;
     overflow: hidden;
     padding-bottom: 25px;
+    border: 1px solid rgba(255,255,255,0.2);
     box-shadow: 0 8px 28px rgba(0,0,0,0.3);
     transition: 0.35s ease;
-    border: 1px solid rgba(255,255,255,0.2);
 }
 
 .yak-style-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 12px 32px rgba(0,0,0,0.4);
 }
 
-/* ⭐ Wide-image fix: full image visible with cinematic backdrop */
+/* Image box fix */
 .yak-style-card .img-box {
     width: 100%;
     height: 270px;
@@ -128,32 +121,26 @@ section {
 .yak-style-card .img-box img {
     width: 100%;
     height: 100%;
-    object-fit: contain;      /* No cropping */
+    object-fit: contain;
     position: relative;
     z-index: 2;
 }
 
-/* Blurred Background Behind Image */
+/* Backdrop image blur */
 .yak-style-card .img-box::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-position: center;
+    inset: 0;
+    background-image: inherit;
     background-size: cover;
-    background-repeat: no-repeat;
-    /* filter: blur(1px); */
-    transform: scale(1.2);
+    background-position: center;
     opacity: 0.45;
+    transform: scale(1.2);
     z-index: 1;
-    background-image: inherit; /* auto-uses same img */
 }
 
 .yak-style-card h3 {
     margin-top: 18px;
-    color: #fff;
     font-size: 24px;
     text-shadow: 0 3px 8px rgba(0,0,0,0.4);
 }
@@ -163,11 +150,10 @@ section {
     margin: 15px 30px 25px;
     line-height: 1.6;
     color: #eee;
-    font-size: 15px;
 }
 
 /* -----------------------------------------
-   COSTUME + MUSIC SECTION
+   COSTUME + MUSIC
 ----------------------------------------- */
 .yak-cm {
     display: flex;
@@ -186,7 +172,6 @@ section {
 }
 
 .yak-cm-box h2 {
-    color: #fff;
     margin-bottom: 12px;
     font-size: 24px;
     text-shadow: 0 3px 8px rgba(0,0,0,0.4);
@@ -195,7 +180,6 @@ section {
 .yak-cm-box p {
     color: #eee;
     line-height: 1.7;
-    font-size: 15px;
 }
 
 /* -----------------------------------------
@@ -207,7 +191,6 @@ section {
 }
 
 .yak-video h2 {
-    color: #fff;
     margin-bottom: 20px;
     text-shadow: 0 3px 8px rgba(0,0,0,0.4);
 }
@@ -244,4 +227,84 @@ section {
 
 .yak-back a:hover {
     background: #a3740c;
+}
+
+/* =====================================================
+      RESPONSIVE DESIGN — MOBILE + TABLET
+===================================================== */
+
+/* TABLETS (900px) */
+@media (max-width: 900px) {
+
+    .yak-about {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .yak-about-img img {
+        width: 90%;
+    }
+
+    .yak-style-grid {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .yak-style-card {
+        width: 100%;
+    }
+
+    .yak-cm {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .yak-video iframe {
+        height: 350px;
+    }
+}
+
+/* MOBILE PHONES (600px) */
+@media (max-width: 600px) {
+
+    .yak-hero-text h1 {
+        font-size: 38px;
+    }
+
+    .yak-hero-text p {
+        font-size: 16px;
+    }
+
+    .yak-about-img img {
+        width: 100%;
+    }
+
+    .yak-about-text h2 {
+        font-size: 26px;
+    }
+
+    .yak-styles h2 {
+        font-size: 26px;
+    }
+
+    .yak-style-card .img-box {
+        height: 200px;
+    }
+
+    .yak-style-card h3 {
+        font-size: 20px;
+    }
+
+    .yak-cm {
+        padding: 20px;
+    }
+
+    .yak-video h2 {
+        font-size: 24px;
+    }
+
+    .yak-back {
+        padding: 30px;
+    }
 }

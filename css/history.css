@@ -1,29 +1,25 @@
 /* ===========================
    GLOBAL PAGE BACKGROUND
-   =========================== */
+=========================== */
 body {
     background: url('../images/an-bg.jpg') center/cover fixed;
-    font-family: 'Merriweather', serif;   /* Historical premium font */
-    color: #f7f2e9;                       /* Off-white for readability */
+    font-family: 'Merriweather', serif;
+    color: #f7f2e9;
     line-height: 1.8;
 }
 
-/* Soft Dark Overlay for readability */
 body::before {
     content: "";
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.35);   /* slightly stronger for clarity */
+    inset: 0;
+    background: rgba(0,0,0,0.35);
     pointer-events: none;
     z-index: -1;
 }
 
 /* ===========================
    HERO SECTION
-   =========================== */
+=========================== */
 .history-hero {
     margin-top: 80px;
     padding: 130px 20px;
@@ -46,28 +42,23 @@ body::before {
 }
 
 /* ===========================
-   MAIN CONTENT WRAPPER
-   =========================== */
+   CONTENT WRAPPER
+=========================== */
 .history-wrapper {
     max-width: 1000px;
     margin: 0 auto;
     padding: 60px 20px 80px;
 }
 
-/* ===========================
-   CONTENT SECTIONS
-   =========================== */
 .history-block {
     margin-bottom: 55px;
 }
 
-/* Headings */
 .history-block h2 {
     font-size: 30px;
     font-weight: 800;
     color: #f3e9c9;
     text-shadow: 0 2px 4px rgba(0,0,0,0.6);
-    margin-bottom: 12px;
 }
 
 .history-block h3 {
@@ -77,33 +68,30 @@ body::before {
     text-shadow: 0 2px 4px rgba(0,0,0,0.6);
 }
 
-/* Paragraphs */
 .history-block p {
     font-size: 17px;
     color: #f7f2e9;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.4);
     margin-bottom: 12px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.4);
 }
 
-/* Lists */
 .history-block ul {
     padding-left: 22px;
 }
 
 .history-block ul li {
-    color: #f7f2e9;
     font-size: 16px;
+    color: #f7f2e9;
     text-shadow: 0 1px 2px rgba(0,0,0,0.4);
 }
 
-/* Timeline list spacing */
 .timeline-list li {
     margin-bottom: 8px;
 }
 
 /* ===========================
    MAP SECTION
-   =========================== */
+=========================== */
 .history-map-section {
     text-align: center;
     margin: 65px auto;
@@ -126,7 +114,6 @@ body::before {
     opacity: 0.96;
 }
 
-/* Map Button */
 .map-btn {
     margin-top: 15px;
     padding: 12px 26px;
@@ -142,4 +129,96 @@ body::before {
 
 .map-btn:hover {
     background: #a3771d;
+}
+
+/* ======================================
+   📱 RESPONSIVE DESIGN — Tablet & Mobile
+====================================== */
+
+/* Tablets: up to 992px */
+@media (max-width: 992px) {
+
+    .history-hero {
+        padding: 110px 20px;
+        background-position: center top;
+    }
+
+    .history-hero-text h1 {
+        font-size: 42px;
+    }
+
+    .history-hero-text p {
+        font-size: 18px;
+    }
+
+    .history-wrapper {
+        padding: 40px 20px 60px;
+    }
+
+    .history-block h2 {
+        font-size: 26px;
+    }
+}
+
+/* Mobile: up to 768px */
+@media (max-width: 768px) {
+
+    .history-hero {
+        padding: 95px 20px;
+    }
+
+    .history-hero-text h1 {
+        font-size: 34px;
+    }
+
+    .history-hero-text p {
+        font-size: 16px;
+    }
+
+    .history-wrapper {
+        padding: 30px 18px 50px;
+    }
+
+    .history-map {
+        width: 85%;
+    }
+
+    .map-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/* Small Mobile: up to 480px */
+@media (max-width: 480px) {
+
+    .history-hero {
+        padding: 80px 15px;
+    }
+
+    .history-hero-text h1 {
+        font-size: 28px;
+    }
+
+    .history-hero-text p {
+        font-size: 14px;
+    }
+
+    .history-block h2 {
+        font-size: 22px;
+    }
+
+    .history-block p,
+    .history-block ul li {
+        font-size: 15px;
+    }
+
+    .history-map {
+        width: 92%;
+    }
+
+    .map-btn {
+        font-size: 13px;
+        padding: 9px 18px;
+    }
 }
